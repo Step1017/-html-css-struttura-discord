@@ -137,16 +137,17 @@ main > section:last-of-type {
     margin-top: 30px;
     margin-bottom: 30px;
     justify-content: space-between;
+    
 }
 
 .logo2, .button{
     background-color: pink;
-    display: flex;
+    
     
 }
 
 footer {
     background-color: #252323;
     padding: 10px;
-    display: flex;
+    
 }
