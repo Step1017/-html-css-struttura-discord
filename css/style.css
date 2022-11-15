@@ -1,23 +1,137 @@
 /* RESET */
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.flex-container{
-    display: flex;
-    justify-content: center;
-}
-
+/* REGOLE GENERALI */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
-    width: 100%;
 }
+
+.bg-gray {
+    background-color: lightgray;
+}
+
+/* HEADER */
+header {
+    padding-bottom: 4px;
+}
+
+.header-top {
+    padding: 15px 0;
+}
+
+.main-header {
+    display: flex;
+}
+
+.main-header > * {
+    padding: 10px;
+}
+
+.main-header > .small-column {
+    width: 25%;
+}
+
+.main-header > .small-column:last-child {
+    text-align: right;
+}
+
+.main-header > .big-column {
+    width: 50%;
+}
+
+.main-header > .big-column ul {
+    list-style: none;
+    text-align: center;
+}
+
+.main-header > .big-column ul li {
+    display: inline-block;
+}
+
+.main-header > .big-column ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom .jumbotron {
+    min-width: 50%;
+    margin: 0 auto;
+}
+
+/* MAIN */
+
+main section {
+    padding: 30px 0;
+}
+
+.section-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-container > .section-big-column {
+    width: 66%;
+}
+
+.section-container > .section-small-column {
+    width: 34%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    padding-top: 10px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top > .footer-small-column {
+    width:  25%;
+}
+
+.footer-top > .footer-big-column {
+    width: 75%;
+    display: flex;
+}
+
+.footer-top > .footer-big-column > div {
+    width: 25%;
+}
+
+footer hr {
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.footer-bottom > div {
+    padding: 5px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -25,129 +139,72 @@
 
 
 /* DEBUG */
-
-.debug header{
-    background-color: cyan;
-    min-height: 70px;
-    display: flex;
+.debug header {
+    background-color: lightblue;
 }
 
-.nav-list{
-    list-style: none;
-    align-content: space-around;
-    padding: 0 270px;
+.debug .container {
+    /* min-height: 60px;
+    background-color: antiquewhite; */
 }
 
-li a{
-    text-decoration: none;
-    padding: 10px;
+.debug .bordered {
+    border: 2px dashed black;
 }
 
-
-.border{
-    border: 1px dashed black;
-    padding: 10px;
-    background-color: yellow;
+.debug .main-header {
+    background-color: goldenrod;
 }
 
-.logo{
-    padding: 10px 80px;
-}
-
-
-.login{
-    padding: 10px 80px;
-}
-
-main > section {
-    padding: 30px 0;
-}
-
-main > section:nth-of-type(odd) {
-    background-color: lightgray;
-}
-
-main > section:first-child {
-   background: none;
-}
-
-
-
-.bg-blue{
+.debug .header-bottom {
+    min-height: 400px;
     background-color: blue;
-    height: 400px;
-    align-items: center;
 }
 
-.bg-magenta{
-    background-color: violet;
-    height: 80%;
-    width: 60%;
+.debug .header-bottom .jumbotron {
+    min-height: 300px;
+    background-color: fuchsia;
 }
 
-.bg-cyan{
-    background-color: cyan;
-    height: 400px;
-    width: 60%;
+.debug .section-container > .section-big-column {
+    min-height: 300px;
+    background-color: cornflowerblue;
 }
 
-.bg-pink{
+.debug .section-container > .section-small-column {
+    min-height: 300px;
     background-color: pink;
-    height: 400px;
-    width: 40%;
 }
 
-.square{
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-
-.row{
-    flex-direction: row-reverse;
-}
-
-.bg-green{
+.debug .special-column {
     background-color: green;
-    width: 100%;
-    height: 600px;
+    min-height: 600px;
 }
 
-main > section:last-of-type {
-    background-color: #252323;
+.debug footer {
+    min-height: 400px;
 }
-.sq-pink{
+
+.debug footer .footer-small-column {
+    background-color: coral;
+    min-height: 200px;
+}
+
+.debug footer .footer-big-column {
+    background-color: lightseagreen;
+    min-height: 200px;
+}
+
+.debug .footer-top > .footer-big-column > div {
+    min-height: 200px;
+    border: 2px dashed white;
+}
+
+.debug .footer-bottom {
+    min-height: 50px;
+    background-color: aquamarine;
+}
+
+.debug .footer-bottom > div {
     background-color: pink;
-    width: 60%;
-    height: 400px;
-}
-
-.sq-cyan{
-    background-color: cyan;
-    width: 10%;
-    height: 400px;
-}
-
-.column{
-    margin-bottom: 20px;
-}
-
-.bg-lightgreen{
-    background-color: lightgreen;
-    height: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content: space-between;
-    
-}
-
-.logo2, .button{
-    background-color: pink;
-    
-    
-}
-
-footer {
-    background-color: #252323;
-    padding: 10px;
-    
 }
